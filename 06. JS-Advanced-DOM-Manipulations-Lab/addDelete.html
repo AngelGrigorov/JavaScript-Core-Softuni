@@ -1,0 +1,14 @@
+<h1>List of Items</h1>
+<ul id="items"></ul>
+<input type="text" id="newText" />
+<input type="button" value="Add"
+       onclick="addItem()">
+<script>
+    function addItem() {
+        let text = $('#newText').val();
+        $('#items').append($(`<li>${text} <a href="#">[Delete]</a></li>`));
+        let deleteLink = $('a').on('click', (e) => {
+            e.target.parentNode.remove();
+        });
+    }
+</script>
