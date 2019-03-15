@@ -7,7 +7,7 @@ describe('sum', function () {
 
         let result = sum(arr);
 
-        assert.equal(result, 16);
+        assert.equal(result, 15);
     });
 
     it('should return sum', function () {
